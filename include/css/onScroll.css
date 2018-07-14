@@ -1,0 +1,10 @@
+
+/*Style Sheet for OnScroll.js*/
+
+.os-animation{
+  opacity: 0;
+}
+
+.os-animation.animated{
+    opacity: 1;
+}
