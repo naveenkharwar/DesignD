@@ -241,11 +241,10 @@ html,body{
   text-align: center;
   /*margin-top:17%;*/
   display: flex;
-      margin-left: auto;
-    margin-right: auto;
-    top: 20%;
-/*    display: table-cell;
-    vertical-align: middle*/
+  margin-left: auto;
+  margin-right: auto;
+  top: 20%;
+  padding: 8px;
 }
 
 .animated .text-wrapper {
@@ -320,7 +319,6 @@ html,body{
 .heading{
   font-weight: lighter;
   font-size: 9em;
-  padding-bottom: 30px;
 }
 .sm-heading{
   font-weight: lighter;
@@ -396,9 +394,12 @@ html,body{
 }
 .mid-heading{
   text-align: center;
+  color: #00a99d;
+  padding: 10px;
 }
 .ml11 {
   /*font-weight: 900;*/
+  color: #A19E9E;
   font-size: 3em;
 }
 
@@ -432,7 +433,10 @@ html,body{
   display: inline-block;
   line-height: 1em;
 }
-
+.fcenter{
+  text-align: center;
+  padding: 10px;
+}
 /*SKILSS*/
 .skills{
  /* background: 
@@ -494,6 +498,10 @@ html,body{
 .under-line{
   border-bottom: 2px solid currentColor;
   width:100%;
+}
+.sm-under-line{
+  border-bottom: 2px solid currentColor;
+  width: inherit;
 }
 .redunder-line{
   border-bottom: 3px solid red;
@@ -563,5 +571,24 @@ html,body{
 .sm-para{
   text-align: center;
 }
+h3 span {
+  display: inline-block;
+  position: relative;
+}
+h3 span:before, h3 span:after {
+  content: "";
+  border-bottom: 2px solid #00a99d;
+  width: 3em;
+  margin: 0 1.5em;
+  position: absolute;
+  bottom: .5em;
+}
+h3 span:before {
+  right: 100%;
+}
+h3 span:after {
+  left: 100%;
+}
+
 /**/
 

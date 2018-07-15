@@ -1,0 +1,29 @@
+{
+  "name": "designd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naveenkharwar/DesignD.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naveenkharwar/DesignD/issues"
+  },
+  "homepage": "https://github.com/naveenkharwar/DesignD#readme",
+  "dependencies": {
+    "browser-sync": "^2.24.5",
+    "normalize.css": "^8.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
