@@ -239,15 +239,15 @@ html,body{
   background-color: rgba(171, 170, 170, 0.34);
   vertical-align: middle;
   text-align: center;
-  margin-top:17%;
+  /*margin-top:17%;*/
+  display: flex;
+      margin-left: auto;
+    margin-right: auto;
+    top: 20%;
+/*    display: table-cell;
+    vertical-align: middle*/
 }
-.work{
-    margin: 0 auto;
-    padding: 0;
-    display: inline-block;
-    line-height: 50px;
-    text-align: center;
-}
+
 .animated .text-wrapper {
   position: relative;
   display: inline-block;
