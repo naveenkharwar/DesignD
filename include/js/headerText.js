@@ -40,7 +40,7 @@ anime.timeline({loop: true})
     opacity: 0,
     duration: 10000000,
     easing: "easeOutExpo",
-    delay: 1000
+    delay: 1000000000
   });
 // Section Heading
 

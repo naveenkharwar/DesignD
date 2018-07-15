@@ -222,17 +222,31 @@ html,body{
 
 /* Animated Text */
 @import url('https://fonts.googleapis.com/css?family=Baskerville');
-.animated {
+/*.animated {
+
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  margin: auto 0;
+  
+  padding: 8px;
+}*/
+.animated{
   position: relative;
   font-weight: 300;
   font-size: 4.5em;
   color: #fff;
-  top: 5;
-  bottom: 0;
-  text-align: center;
-  margin: auto 0;
   background-color: rgba(171, 170, 170, 0.34);
-  padding: 8px;
+  vertical-align: middle;
+  text-align: center;
+  margin-top:15%;
+}
+.work{
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
 }
 .animated .text-wrapper {
   position: relative;
