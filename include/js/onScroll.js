@@ -1,6 +1,6 @@
 $(function() {
   AOS.init({
-    duration: 1200
+    duration: 2000
   });
 
   $('.js-load-more').on('click', function() {
@@ -32,3 +32,4 @@ function onElementHeightChange(elm, callback) {
         elm.onElementHeightChangeTimer = setTimeout(run, 200);
     })();
   }
+
