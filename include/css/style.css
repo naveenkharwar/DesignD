@@ -864,3 +864,78 @@ h2{
 .slick-arrow.slick-hidden {
   display: none;
 }
+/*Footer*/
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    padding-left: 30px;
+    padding-right:30px;
+    text-align: center;
+    text-decoration: none;
+    /*display: inline-block;*/
+    font-size: 16px;
+    margin: 4px 7px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    /*margin:0 auto;*/
+    float: right;
+}
+.quote{
+    /*display: inline-block;*/
+    /*float: right;*/
+    background-color: #008CBA; 
+    color: #fff; 
+    border: 2px solid #fff;
+}
+
+.quote:hover {
+    background-color: #fff;
+    color: #000;
+}
+footer hr{
+  background-color: #fff;
+}
+footer h5{
+  color: #fff;
+}
+footer{
+  color: #B8B5B5;
+}
+footer a{
+  color: #B8B5B5;
+}
+footer a:hover{
+  color: #FE807E;
+}
+
+#wrapper_1:after {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  width: 1px;
+  height: 90%;
+  top: 10px;
+  left: 100%;
+  display: inline-block;
+}
+.foot{
+   
+   background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../img/footer.jpg) top center no-repeat ;
+   background-attachment: fixed;
+   padding-bottom:10px; 
+   padding-top:15px;
+}
+.quote-txt{
+  color:#fff; 
+  background-color: #008CBA; 
+  padding-top: 20px;
+  padding-bottom: 20px; 
+  margin-top: 20px;"
+}
+.quote-txt h3{
+  margin: 4px 4px;
+  display: inline-block; 
+}
