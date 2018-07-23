@@ -21,8 +21,7 @@ body {
   }
 }
 p{
-  font-family: 'Raleway', sans-serif;
-  /* font-size: 0.9em; */
+  font-family: 'Raleway', sans-serif; 
 }
 /*Heading*/
 .sub-heading{
@@ -972,7 +971,9 @@ footer a:hover{
 .item-3 {
   font-size:1em;
 }
-
+p{
+  font-size:10px;
+}
 }
 
 @media (min-width: 992px) { ... }
