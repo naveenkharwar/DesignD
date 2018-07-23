@@ -939,3 +939,37 @@ footer a:hover{
   margin: 4px 4px;
   display: inline-block; 
 }
+/*Responsive Design*/
+
+
+
+@media (max-width: 768px) {
+    .nav-menu{
+    display: none;
+  }
+  .heading{
+  font-weight: lighter;
+  font-size: 5em;
+  }
+  .mid-heading{
+  text-align: center;
+  color: #00a99d;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+}
+.service-heading{
+  font-weight: lighter;
+  font-size: 3em;
+  padding-bottom: 30px;
+  text-align: right;
+  margin: 0px;
+  text-align: center;
+}
+}
+
+@media (min-width: 992px) { ... }
+
+@media (min-width: 1200px) {
+
+}
