@@ -946,52 +946,60 @@ footer a:hover{
   .logo{
     float: right;
   }
-nav ul{
-  display: none;
+.fixed-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
+  nav ul{
+    display: none;
+  }
   .heading{
-  font-weight: lighter;
-  font-size: 5em;
+    font-weight: lighter;
+    font-size: 5em;
   }
   .mid-heading{
-  text-align: center;
-  color: #00a99d;
-  padding: 10px;
-  font-size: 15px;
-  text-align: center;
-}
-.service-heading{
-  font-weight: lighter;
-  font-size: 3em;
-  padding-bottom: 30px;
-  text-align: right;
-  margin: 0px;
-  text-align: center;
-}
-.item-1,
-.item-2,
-.item-3 {
-  font-size:1em;
-}
-.contact-us{
-  text-align: center;
-}
-.button {
+    text-align: center;
+    color: #00a99d;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+  }
+  .service-heading{
+    font-weight: lighter;
+    font-size: 3em;
+    padding-bottom: 30px;
+    text-align: right;
+    margin: 0px;
+    text-align: center;
+  }
+  .item-1,
+  .item-2,
+  .item-3 {
+    font-size:1em;
+  }
+  .contact-us{
+    text-align: center;
+  }
+  .button {
     text-align: center;
     float: none;
-}
+  }
+ 
 }
 
 @media (min-width: 992px) {
   .responsive-nav{
     display: none;
-   }
+  }
 }
 
 @media (min-width: 1200px) {
-   nav .dropdown{
-    display: none;
-   }
+ nav .dropdown{
+  display: none;
+}
 }
 
 /*Responsive Menu*/
