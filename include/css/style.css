@@ -971,6 +971,13 @@ footer a:hover{
 .item-3 {
   font-size:1em;
 }
+.contact-us{
+  text-align: center;
+}
+.button {
+    text-align: center;
+    float: none;
+}
 }
 
 @media (min-width: 992px) { ... }
