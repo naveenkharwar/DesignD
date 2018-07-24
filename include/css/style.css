@@ -322,6 +322,9 @@
   #skills .card .fa-wordpress{
     color: #599BF5;
   }
+  .card {
+  	margin-bottom: 30px;
+  }
 /*
   ===================================================
   */
@@ -333,10 +336,7 @@
     text-align: center;
     color: #FF9C00;
   }
-  /*card start*/
-  /*card end*/
-  /*Skills bar*/
-  /*Skills Bar*/
+
   #skills-chart .fa-angellist{
     padding-right: 20px;
   }
