@@ -1,128 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Head Start -->
-		<meta charset="utf-8">
-		<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="">
-		<meta name="author" content="">
-		<title>DesignD Website Template</title>
-		<!-- Bootstrap core CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-		<!-- Normalize.css -->
-		<link rel="stylesheet" type="text/css" href="node_modules/normalize.css/normalize.css">
-		<!-- Custom Style for this template -->
-		<link href="include/css/style.css" rel="stylesheet">
-		<!-- OnSCroll Library -->
-		<script type="text/javascript" src="include/js/onScroll.js"></script>
-		<!-- onScroll.css Library-->
-		<link rel="stylesheet" type="text/css" href="include/css/onScroll.css">
-		<!-- Animate.css Library-->
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-		<!-- Animate On Scroll Library -->
-		<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
-		<!-- Google Font -->
-		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-		<!-- FontAwesome -->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-	</head>
-	<body>
-		<!-- Body Start -->
-		<nav class="nav-menu fixed-top nav-item">
-			<!-- Navigation -->
-			<div class="container">
-				<a href="#"><img src="include/img/logo.png" alt="" class="img-rounded logo"></a>
-				<!-- Responsive Menu -->
-				<div class="dropdown">
-					<button onclick="myFunction()" class="dropbtn"><i class="fas fa-align-left"></i></button>
-				</div>
-				<ul class="nav-item ml-auto" id="myDropdown" class="dropdown-content">
-					<li><a href="#">Home</a></li>
-					<li><a href="#about-us">About us</a></li>
-					<li><a href="#skills">Our Skils</a></li>
-					<li><a href="#">Our Services</a></li>
-					<li><a href="#">Our Clients</a></li>
-					<li><a href="#">Contact us</a></li>
-				</ul>
+<head>
+	<!-- Head Start -->
+	<meta charset="utf-8">
+	<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>DesignD Website Template</title>
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<!-- Normalize.css -->
+	<link rel="stylesheet" type="text/css" href="node_modules/normalize.css/normalize.css">
+	<!-- Custom Style for this template -->
+	<link href="include/css/style.css" rel="stylesheet">
+	<!-- OnSCroll Library -->
+	<script type="text/javascript" src="include/js/onScroll.js"></script>
+	<!-- onScroll.css Library-->
+	<link rel="stylesheet" type="text/css" href="include/css/onScroll.css">
+	<!-- Animate.css Library-->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<!-- Animate On Scroll Library -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+</head>
+<body>
+	<!-- Body Start -->
+	<nav class="nav-menu fixed-top nav-item">
+		<!-- Navigation -->
+		<div class="container">
+			<a href="#"><img src="include/img/logo.png" alt="" class="img-rounded logo"></a>
+			<!-- Responsive Menu -->
+			<div class="dropdown">
+				<button onclick="myFunction()" class="dropbtn" id="myButton"><i class="fas fa-align-left"></i></button>
 			</div>
-		</nav>
-		<!-- Responsive Navigation Script -->
-		<script>
+
+			<ul class="nav-item ml-auto" id="myDropdown" class="dropdown-content">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about-us">About us</a></li>
+				<li><a href="#skills">Our Skills</a></li>
+				<li><a href="#services">Our Services</a></li>
+				<li><a href="#clients">Our Clients</a></li>
+				<li><a href="#contact-us">Contact us</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Responsive Navigation Script -->
+	<script>
 		/* When the user clicks on the button,
 		toggle between hiding and showing the dropdown content */
 		function myFunction() {
-		document.getElementById("myDropdown").classList.toggle("show");
+			document.getElementById("myDropdown").classList.toggle("show");
 		}
 		// Close the dropdown if the user clicks outside of it
 		window.onclick = function(event) {
-		if (!event.target.matches('.dropbtn')) {
-		var dropdowns = document.getElementsByClassName("dropdown-content");
-		var i;
-		for (i = 0; i < dropdowns.length; i++) {
-		var openDropdown = dropdowns[i];
-		if (openDropdown.classList.contains('show')) {
-		openDropdown.classList.remove('show');
+			if (!event.target.matches('.dropbtn')) {
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.classList.contains('show')) {
+						openDropdown.classList.remove('show');
+					}
+				}
+			}
 		}
-		}
-		}
-		}
-		</script>
-		<!-- Header Start-->
+	</script>
+	<!-- Header Start-->
 		<!-- Thanks To https://codepen.io/nodws/pen/aWgMMQ
 		# For coding such a awesome header #
-		-->
-		<!-- Script For Header Image  -->
-		<script type="text/javascript">
+	-->
+	<!-- Script For Header Image  -->
+	<script type="text/javascript">
 		anime.timeline({
-		loop: true
+			loop: true
 		})
 		.add({
-		targets: '.ml5 .line',
-		opacity: [0.5, 1],
-		scaleX: [0, 1],
-		easing: "easeInOutExpo",
-		duration: 700
+			targets: '.ml5 .line',
+			opacity: [0.5, 1],
+			scaleX: [0, 1],
+			easing: "easeInOutExpo",
+			duration: 700
 		}).add({
-		targets: '.ml5 .line',
-		duration: 600,
-		easing: "easeOutExpo",
-		translateY: function(e, i, l) {
-		var offset = -0.625 + 0.625 * 2 * i;
-		return offset + "em";
-		}
+			targets: '.ml5 .line',
+			duration: 600,
+			easing: "easeOutExpo",
+			translateY: function(e, i, l) {
+				var offset = -0.625 + 0.625 * 2 * i;
+				return offset + "em";
+			}
 		}).add({
-		targets: '.ml5 .ampersand',
-		opacity: [0, 1],
-		scaleY: [0.5, 1],
-		easing: "easeOutExpo",
-		duration: 600,
-		offset: '-=600'
+			targets: '.ml5 .ampersand',
+			opacity: [0, 1],
+			scaleY: [0.5, 1],
+			easing: "easeOutExpo",
+			duration: 600,
+			offset: '-=600'
 		}).add({
-		targets: '.ml5 .letters-left',
-		opacity: [0, 1],
-		translateX: ["0.5em", 0],
-		easing: "easeOutExpo",
-		duration: 600,
-		offset: '-=300'
+			targets: '.ml5 .letters-left',
+			opacity: [0, 1],
+			translateX: ["0.5em", 0],
+			easing: "easeOutExpo",
+			duration: 600,
+			offset: '-=300'
 		}).add({
-		targets: '.ml5 .letters-right',
-		opacity: [0, 1],
-		translateX: ["-0.5em", 0],
-		easing: "easeOutExpo",
-		duration: 600,
-		offset: '-=600'
+			targets: '.ml5 .letters-right',
+			opacity: [0, 1],
+			translateX: ["-0.5em", 0],
+			easing: "easeOutExpo",
+			duration: 600,
+			offset: '-=600'
 		}).add({
-		targets: '.ml5',
-		opacity: 0,
-		duration: 1000,
-		easing: "easeOutExpo",
-		delay: 1000
+			targets: '.ml5',
+			opacity: 0,
+			duration: 1000,
+			easing: "easeOutExpo",
+			delay: 1000
 		});
-		</script>
-		<div class="header">
-			<!-- Header Class Start -->
-			<h1 class="animated">
+	</script>
+	<div class="header" id="home">
+		<!-- Header Class Start -->
+		<h1 class="animated">
 			<span class="text-wrapper">
 				<span class="line line1"></span>
 				<span class="letters letters-left">Naveen</span>
@@ -130,338 +131,351 @@
 				<span class="letters letters-right">Kharwar</span>
 				<span class="line line2"></span>
 			</span>
-			</h1>
-			<p class="item-1">The best UI/UX Designers in India 👨‍💻.</p>
-			<p class="item-2">Client Serving best is our focus 🤗.</p>
-			<p class="item-3">Best prices and best quality ❤️.</p>
+		</h1>
+		<p class="item-1">The best UI/UX Designers in India 👨‍💻.</p>
+		<p class="item-2">Client Serving best is our focus 🤗.</p>
+		<p class="item-3">Best prices and best quality ❤️.</p>
+	</div>
+	<!-- header end -->
+	<section id="about-us">
+		<!-- About section start -->
+		<div class="container">
+			<span class="text-wrapper-heading">
+				<div >
+					<h1 class="heading"><span class="under-line"; data-aos="fade-left">About us</span></h1>
+				</div>
+				<span class="line"></span>
+			</span>
+			<div class="row">
+				<div class="col-sm-8" data-aos="fade-right">
+					<p class="about-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare efficitur vehicula. Integer varius nulla odio, nec euismod enim congue eu. Vivamus iaculis orci vel elit volutpat faucibus. Ut iaculis est vel tempus tincidunt. Maecenas eu accumsan orci. In in ultrices ante. Duis aliquet turpis in leo fringilla consequat. Suspendisse porta faucibus luctus. Vestibulum malesuada accumsan felis, sit amet vehicula lectus sagittis vitae. Nullam blandit sem non tellus dapibus, sit amet ultrices felis tempus. Sed sed pulvinar diam.</p>
+				</div>
+				<div class="col-sm-4">
+					<img src="https://cdn.shopify.com/s/files/1/1823/9587/products/Artifox_Desk-02_Walnut_Gallery_02.jpg?v=1503084413" class="img-responsive" alt="office">
+				</div>
+			</div>
+			<h3 class="mid-heading" data-aos="zoom-in"><span> We Work As Family Not Company </span></h3>
+			<div class="row" style="padding-top: 10px">
+				<div class="col-sm-6 "><img src="https://us.123rf.com/450wm/pressmaster/pressmaster1511/pressmaster151100041/47436778-successful-businesspeople-sitting-at-conference-or-seminar-during-lecture.jpg?ver=6" class="img-responsive" alt="office" data-aos="zoom-in"></div>
+				<div class="col-sm-6">
+					<p class="about-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare efficitur vehicula. Integer varius nulla odio, nec euismod enim congue eu. Vivamus iaculis orci vel elit volutpat faucibus. Ut iaculis est vel tempus tincidunt. Maecenas eu accumsan orci. In in ultrices ante. Duis aliquet turpis in leo fringilla consequat. Suspendisse porta faucibus luctus. Vestibulum malesuada accumsan felis, sit amet vehicula lectus sagittis vitae. Nullam blandit sem non tellus dapibus, sit amet ultrices felis tempus. Sed sed pulvinar diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare efficitur vehicula. Integer varius nulla odio, nec euismod enim congue eu.</p>
+				</div>
+			</div>
 		</div>
-		<!-- header end -->
-		<section id="about-us">
-			<!-- About section start -->
-			<div class="container">
+	</section>
+	<!-- About section end -->
+	<div class="container">
+		<!-- Product Card  -->
+		<h1>Technilogy we use!</h1>
+	</div>
+	<div class="container-fluid skills">
+		<div class="container">
+			<!-- Start Skill row -->
+			<div class="row">
+				<div class="col-sm" data-aos="flip-up">
+					<div class="card">
+						<i class="font-icon fab fa-html5" data-aos="flip-up"></i>
+						<div class="container">
+							<h4 style="color: red; text-align: center;"><b>HTML</b></h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit odio quis aliquam aliquet.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm" data-aos="flip-up">
+					<div class="card">
+						<i class="font-icon fab fa-css3-alt" data-aos="flip-up"></i>
+						<div class="container">
+							<h4 style="color: #2284FE;text-align: center;"><b>CSS</b></h4>
+							<p class="sm-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit odio quis aliquam aliquet.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm">
+					<div class="card">
+						<i class="font-icon fab fa-js" data-aos="flip-up"></i>
+						<div class="container">
+							<h4 style="color: #D3D511; text-align: center;"><b>JavaScript</b></h4>
+							<p class="sm-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit odio quis aliquam aliquet.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm" data-aos="flip-up">
+					<div class="card">
+						<i class="font-icon fab fa-php" data-aos="flip-up"></i>
+						<div class="container">
+							<h4 style="color: #B087F3; text-align: center;"><b>PHP</b></h4>
+							<p class="sm-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit odio quis aliquam aliquet.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm" data-aos="flip-up">
+					<div class="card">
+						<i class="font-icon fab fa-wordpress" data-aos="flip-up"></i>
+						<div class="container">
+							<h4 style="color: #599BF5; text-align: center;"><b>WordPress</b></h4>
+							<p class="sm-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit odio quis aliquam aliquet.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Card -->
+				<!--
+				Copy above row here and edit to add more Cards.
+			-->
+		</div>
+	</div>
+	<section id="skills-chart">
+		<!-- Skills Bar Start -->
+		<div class="container" id="skills">
+			<h3 class="mid-heading" style="padding-top: 5%;"><span> SKILLS </span></h3>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="skillbar clearfix " data-percent="20%" data-aos="fade-up">
+						<div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+						<div class="skillbar-bar" style="background: #e67e22;"></div>
+						<div class="skill-bar-percent">20%</div>
+					</div>
+					<!-- End Skill Bar -->
+					<div class="skillbar clearfix " data-percent="25%" data-aos="fade-up">
+						<div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
+						<div class="skillbar-bar" style="background: #3498db;"></div>
+						<div class="skill-bar-percent">25%</div>
+					</div>
+					<!-- End Skill Bar -->
+					<div class="skillbar clearfix " data-percent="50%" data-aos="fade-up">
+						<div class="skillbar-title" style="background: #2c3e50;"><span>jQuery</span></div>
+						<div class="skillbar-bar" style="background: #2c3e50;"></div>
+						<div class="skill-bar-percent">50%</div>
+					</div>
+					<!-- End Skill Bar -->
+					<div class="skillbar clearfix " data-percent="40%" data-aos="fade-up">
+						<div class="skillbar-title" style="background: #46465e;"><span>PHP</span></div>
+						<div class="skillbar-bar" style="background: #5a68a5;"></div>
+						<div class="skill-bar-percent">40%</div>
+					</div>
+					<!-- End Skill Bar -->
+					<div class="skillbar clearfix " data-percent="75%" data-aos="fade-up">
+						<div class="skillbar-title" style="background: #333333;"><span>Wordpress</span></div>
+						<div class="skillbar-bar" style="background: #525252;"></div>
+						<div class="skill-bar-percent">75%</div>
+					</div>
+					<!-- End Skill Bar -->
+					<div class="skillbar clearfix " data-percent="100%" data-aos="fade-up">
+						<div class="skillbar-title" style="background: #27ae60;"><span>SEO</span></div>
+						<div class="skillbar-bar" style="background: #2ecc71;"></div>
+						<div class="skill-bar-percent">100%</div>
+					</div>
+					<!-- End Skill Bar -->
+					<div class="skillbar clearfix " data-percent="70%" data-aos="fade-up">
+						<div class="skillbar-title" style="background: #124e8c;"><span>Photoshop</span></div>
+						<div class="skillbar-bar" style="background: #4288d0;"></div>
+						<div class="skill-bar-percent">70%</div>
+					</div>
+					<!-- End Skill Bar -->
+					<div class="skillbar clearfix " data-percent="80%" data-aos="fade-up">
+						<div class="skillbar-title" style="background: #124e8c;"><span>Digital Marketing</span></div>
+						<div class="skillbar-bar" style="background: #4288d0;"></div>
+						<div class="skill-bar-percent">80%</div>
+					</div>
+					<!-- End Skill Bar -->
+				</div>
+				<!-- Skills Bar End -->
+				<div class="col-sm-6 ">
+					<!-- Skill Information Start -->
+					<div class="row">
+						<div class="col-sm-6  col-md col-xs">
+							<div class="card" style="margin-bottom: 3px;">
+								<div class="card-body">
+									<div style="float: left; display: inline-block;">
+										<span class="skillad"><i class="fab fa-angellist fa-4x font-icon"></i></span>
+									</div>
+									<div>
+										<h4 class="card-title">Special title treatment</h4>
+										<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus lacinia erat, vel feugiat ante mattis nec. Sed sed ex eleifend, cursus lorem nec, mollis ligula. Morbi vel luctus libero, in laoreet magna.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-md col-xs">
+							<div class="card">
+								<div class="card-body">
+									<div style="float: left; display: inline-block;">
+										<span class="skillad"><i class="fab fa-angellist fa-4x font-icon"></i></span>
+									</div>
+									<div>
+										<h4 class="card-title">Special title treatment</h4>
+										<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus lacinia erat, vel feugiat ante mattis nec. Sed sed ex eleifend, cursus lorem nec, mollis ligula. Morbi vel luctus libero, in laoreet magna.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Skill Information End -->
+			</div>
+		</section><!-- Skills Section End -->
+
+		<section class="services" id="services"><!-- Services Section Start -->
+			<div class="container" style="border: 0.8px solid black ;background-color: #E6E6E6;">
 				<span class="text-wrapper-heading">
 					<div >
-						<h1 class="heading"><span class="under-line"; data-aos="fade-left">About us</span></h1>
+						<h1 class="service-heading"><span class="under-line-gn"; data-aos="fade-left">Our Services</span></h1>
 					</div>
 					<span class="line"></span>
 				</span>
-				<div class="row">
-					<div class="col-sm-8" data-aos="fade-right">
-						<p class="about-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare efficitur vehicula. Integer varius nulla odio, nec euismod enim congue eu. Vivamus iaculis orci vel elit volutpat faucibus. Ut iaculis est vel tempus tincidunt. Maecenas eu accumsan orci. In in ultrices ante. Duis aliquet turpis in leo fringilla consequat. Suspendisse porta faucibus luctus. Vestibulum malesuada accumsan felis, sit amet vehicula lectus sagittis vitae. Nullam blandit sem non tellus dapibus, sit amet ultrices felis tempus. Sed sed pulvinar diam.</p>
-					</div>
-					<div class="col-sm-4">
-						<img src="https://cdn.shopify.com/s/files/1/1823/9587/products/Artifox_Desk-02_Walnut_Gallery_02.jpg?v=1503084413" class="img-responsive" alt="office">
-					</div>
-				</div>
-				<h3 class="mid-heading" data-aos="zoom-in"><span> We Work As Family Not Company </span></h3>
-				<div class="row" style="padding-top: 10px">
-					<div class="col-sm-6 "><img src="https://us.123rf.com/450wm/pressmaster/pressmaster1511/pressmaster151100041/47436778-successful-businesspeople-sitting-at-conference-or-seminar-during-lecture.jpg?ver=6" class="img-responsive" alt="office" data-aos="zoom-in"></div>
-					<div class="col-sm-6">
-						<p class="about-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare efficitur vehicula. Integer varius nulla odio, nec euismod enim congue eu. Vivamus iaculis orci vel elit volutpat faucibus. Ut iaculis est vel tempus tincidunt. Maecenas eu accumsan orci. In in ultrices ante. Duis aliquet turpis in leo fringilla consequat. Suspendisse porta faucibus luctus. Vestibulum malesuada accumsan felis, sit amet vehicula lectus sagittis vitae. Nullam blandit sem non tellus dapibus, sit amet ultrices felis tempus. Sed sed pulvinar diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare efficitur vehicula. Integer varius nulla odio, nec euismod enim congue eu.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- About section end -->
-		<div class="container">
-			<!-- Product Card  -->
-			<h1>Technilogy we use!</h1>
-		</div>
-		<div class="container-fluid skills">
-			<div class="container">
-				<!-- Start Skill row -->
-				<div class="row">
-					<div class="col-sm" data-aos="flip-up">
-						<div class="card">
-							<i class="font-icon fab fa-html5" data-aos="flip-up"></i>
-							<div class="container">
-								<h4 style="color: red; text-align: center;"><b>HTML</b></h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit odio quis aliquam aliquet.</p>
-							</div>
+				<div class="abd" style="/*background-color: #E6E6E6;*/ padding-left: 20px;padding-right: 20px; border: border:5px solid black;">
+					<div class="row" data-aos="fade-up">
+						<div class="col-sm-3 service-box" data-aos="fade-up">
+							<h5><span class="">Web Development</span></h5>
+							<p style=" text-align: center;"><img src="include/img/icons/web.png" class="img-responsive" style="width: 100px;padding: 10px"></p>
+							<p class="service-para">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non cursus sapien. Praesent euismod vel nisl a convallis. Nullam elit nibh, tincidunt ac maximus a, congue at libero. Ut placerat hendrerit sapien commodo pretium. Integer placerat laoreet libero, quis fringilla lectus semper vel.
+							</p>
+						</div>
+						<div class="col-sm-3 service-box" data-aos="fade-up">
+							<h5>SEO Company</h5>
+							<p style=" text-align: center;"><img src="include/img/icons/jigsaw.png" class="img-responsive" style="width: 100px;padding: 10px"></p>
+							<p class="service-para">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non cursus sapien. Praesent euismod vel nisl a convallis. Nullam elit nibh, tincidunt ac maximus a, congue at libero. Ut placerat hendrerit sapien commodo pretium. Integer placerat laoreet libero, quis fringilla lectus semper vel.
+							</p>
+						</div>
+						<div class="col-sm-3 service-box" data-aos="fade-up">
+							<h5>Digital Marketing Agency</h5>
+							<p style=" text-align: center;"><img src="include/img/icons/marketing.png" class="img-responsive" style="width: 100px;padding: 10px"></p>
+							<p class="service-para">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non cursus sapien. Praesent euismod vel nisl a convallis. Nullam elit nibh, tincidunt ac maximus a, congue at libero. Ut placerat hendrerit sapien commodo pretium. Integer placerat laoreet libero, quis fringilla lectus semper vel.
+							</p>
+						</div>
+						<div class="col-sm-3 service-box" data-aos="fade-up">
+							<h5>Software Development</h5>
+							<p style=" text-align: center;"><img src="include/img/icons/computer.png" class="img-responsive" style="width: 100px;padding: 10px"></p>
+							<p class="service-para">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non cursus sapien. Praesent euismod vel nisl a convallis. Nullam elit nibh, tincidunt ac maximus a, congue at libero. Ut placerat hendrerit sapien commodo pretium. Integer placerat laoreet libero, quis fringilla lectus semper vel.
+							</p>
 						</div>
 					</div>
-					<div class="col-sm" data-aos="flip-up">
-						<div class="card">
-							<i class="font-icon fab fa-css3-alt" data-aos="flip-up"></i>
-							<div class="container">
-								<h4 style="color: #2284FE;text-align: center;"><b>CSS</b></h4>
-								<p class="sm-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit odio quis aliquam aliquet.</p>
-							</div>
+					<div class="row" data-aos="fade-up">
+						<div class="col-sm-3 service-box" data-aos="fade-up">
+							<h5>Graphic Designing</h5>
+							<p style=" text-align: center;"><img src="include/img/icons/picture.png" class="img-responsive" style="width: 100px;padding: 10px"></p>
+							<p class="service-para">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non cursus sapien. Praesent euismod vel nisl a convallis. Nullam elit nibh, tincidunt ac maximus a, congue at libero. Ut placerat hendrerit sapien commodo pretium. Integer placerat laoreet libero, quis fringilla lectus semper vel.
+							</p>
 						</div>
-					</div>
-					<div class="col-sm">
-						<div class="card">
-							<i class="font-icon fab fa-js" data-aos="flip-up"></i>
-							<div class="container">
-								<h4 style="color: #D3D511; text-align: center;"><b>JavaScript</b></h4>
-								<p class="sm-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit odio quis aliquam aliquet.</p>
-							</div>
+						<div class="col-sm-3 service-box" data-aos="fade-up">
+							<h5>Web Application</h5>
+							<p style=" text-align: center;"><img src="include/img/icons/laptop.png" class="img-responsive" style="width: 100px;padding: 10px"></p>
+							<p class="service-para">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non cursus sapien. Praesent euismod vel nisl a convallis. Nullam elit nibh, tincidunt ac maximus a, congue at libero. Ut placerat hendrerit sapien commodo pretium. Integer placerat laoreet libero, quis fringilla lectus semper vel.
+							</p>
 						</div>
-					</div>
-					<div class="col-sm" data-aos="flip-up">
-						<div class="card">
-							<i class="font-icon fab fa-php" data-aos="flip-up"></i>
-							<div class="container">
-								<h4 style="color: #B087F3; text-align: center;"><b>PHP</b></h4>
-								<p class="sm-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit odio quis aliquam aliquet.</p>
-							</div>
+						<div class="col-sm-3 service-box" data-aos="fade-up">
+							<h5>E-Commerce Website Development</h5>
+							<p style=" text-align: center;"><img src="include/img/icons/online-shopping.png" class="img-responsive" style="width: 100px;padding: 9px"></p>
+							<p class="service-para">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non cursus sapien. Praesent euismod vel nisl a convallis. Nullam elit nibh, tincidunt ac maximus a, congue at libero. Ut placerat hendrerit sapien commodo pretium. Integer placerat laoreet libero, quis fringilla lectus semper vel.
+							</p>
 						</div>
-					</div>
-					<div class="col-sm" data-aos="flip-up">
-						<div class="card">
-							<i class="font-icon fab fa-wordpress" data-aos="flip-up"></i>
-							<div class="container">
-								<h4 style="color: #599BF5; text-align: center;"><b>WordPress</b></h4>
-								<p class="sm-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit odio quis aliquam aliquet.</p>
-							</div>
+						<div class="col-sm-3 service-box" data-aos="fade-up">
+							<h5>Web Application Development Company</h5>
+							<p style=" text-align: center;"><img src="include/img/icons/interface.png" class="img-responsive" style="width: 100px;padding: 10px"></p>
+							<p class="service-para">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non cursus sapien. Praesent euismod vel nisl a convallis. Nullam elit nibh, tincidunt ac maximus a, congue at libero. Ut placerat hendrerit sapien commodo pretium. Integer placerat laoreet libero, quis fringilla lectus semper vel.
+							</p>
 						</div>
 					</div>
 				</div>
-				<!-- End Card -->
-				<!--
-				Copy above row here and edit to add more Cards.
-				-->
-			</div>
-		</div>
-		<section id="skills-chart">
-			<!-- Skills Bar Start -->
-			<div class="container">
-				<h3 class="mid-heading" style="padding-top: 5%;"><span> SKILLS </span></h3>
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="skillbar clearfix " data-percent="20%" data-aos="fade-up">
-							<div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
-							<div class="skillbar-bar" style="background: #e67e22;"></div>
-							<div class="skill-bar-percent">20%</div>
-						</div>
-						<!-- End Skill Bar -->
-						<div class="skillbar clearfix " data-percent="25%" data-aos="fade-up">
-							<div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
-							<div class="skillbar-bar" style="background: #3498db;"></div>
-							<div class="skill-bar-percent">25%</div>
-						</div>
-						<!-- End Skill Bar -->
-						<div class="skillbar clearfix " data-percent="50%" data-aos="fade-up">
-							<div class="skillbar-title" style="background: #2c3e50;"><span>jQuery</span></div>
-							<div class="skillbar-bar" style="background: #2c3e50;"></div>
-							<div class="skill-bar-percent">50%</div>
-						</div>
-						<!-- End Skill Bar -->
-						<div class="skillbar clearfix " data-percent="40%" data-aos="fade-up">
-							<div class="skillbar-title" style="background: #46465e;"><span>PHP</span></div>
-							<div class="skillbar-bar" style="background: #5a68a5;"></div>
-							<div class="skill-bar-percent">40%</div>
-						</div>
-						<!-- End Skill Bar -->
-						<div class="skillbar clearfix " data-percent="75%" data-aos="fade-up">
-							<div class="skillbar-title" style="background: #333333;"><span>Wordpress</span></div>
-							<div class="skillbar-bar" style="background: #525252;"></div>
-							<div class="skill-bar-percent">75%</div>
-						</div>
-						<!-- End Skill Bar -->
-						<div class="skillbar clearfix " data-percent="100%" data-aos="fade-up">
-							<div class="skillbar-title" style="background: #27ae60;"><span>SEO</span></div>
-							<div class="skillbar-bar" style="background: #2ecc71;"></div>
-							<div class="skill-bar-percent">100%</div>
-						</div>
-						<!-- End Skill Bar -->
-						<div class="skillbar clearfix " data-percent="70%" data-aos="fade-up">
-							<div class="skillbar-title" style="background: #124e8c;"><span>Photoshop</span></div>
-							<div class="skillbar-bar" style="background: #4288d0;"></div>
-							<div class="skill-bar-percent">70%</div>
-						</div>
-						<!-- End Skill Bar -->
-						<div class="skillbar clearfix " data-percent="80%" data-aos="fade-up">
-							<div class="skillbar-title" style="background: #124e8c;"><span>Digital Marketing</span></div>
-							<div class="skillbar-bar" style="background: #4288d0;"></div>
-							<div class="skill-bar-percent">80%</div>
-						</div>
-						<!-- End Skill Bar -->
-					</div>
-					<!-- Skills Bar End -->
-					<div class="col-sm-6 ">
-						<!-- Skill Information Start -->
-						<div class="row">
-							<div class="col-sm-6  col-md col-xs">
-								<div class="card" style="margin-bottom: 3px;">
-									<div class="card-body">
-										<div style="float: left; display: inline-block;">
-											<span class="skillad"><i class="fab fa-angellist fa-4x font-icon"></i></span>
-										</div>
-										<div>
-											<h4 class="card-title">Special title treatment</h4>
-											<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus lacinia erat, vel feugiat ante mattis nec. Sed sed ex eleifend, cursus lorem nec, mollis ligula. Morbi vel luctus libero, in laoreet magna.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-6 col-md col-xs">
-								<div class="card">
-									<div class="card-body">
-										<div style="float: left; display: inline-block;">
-											<span class="skillad"><i class="fab fa-angellist fa-4x font-icon"></i></span>
-										</div>
-										<div>
-											<h4 class="card-title">Special title treatment</h4>
-											<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus lacinia erat, vel feugiat ante mattis nec. Sed sed ex eleifend, cursus lorem nec, mollis ligula. Morbi vel luctus libero, in laoreet magna.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Skill Information End -->
+			</section><!-- Services Section End -->
+			<section id="clients"><!-- Clients Section Start -->
+				<h3 class="mid-heading" style="padding-top: 5%; padding-bottom: 5%"><span> CLIENTS </span></h3>
+				<div class="container">
+					<section class="customer-logos slider">
+						<div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
+						<div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+						<div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+						<div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+						<div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+						<div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+						<div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+						<div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
+					</section>
 				</div>
-				</section><!-- Skills Section End -->
-				
-				<section class="services" id="services"><!-- Services Section Start -->
-				<div class="container" style="border: 0.8px solid black ;background-color: #E6E6E6;">
-					<span class="text-wrapper-heading">
-						<div >
-							<h1 class="service-heading"><span class="under-line-gn"; data-aos="fade-left">Our Services</span></h1>
-						</div>
-						<span class="line"></span>
-					</span>
-					<div class="abd" style="/*background-color: #E6E6E6;*/ padding-left: 20px;padding-right: 20px; border: border:5px solid black;">
-						<div class="row" data-aos="fade-up">
-							<div class="col-sm-3 service-box" data-aos="fade-up">
-								<h5><span class="">Web Development</span></h5>
-								<p style=" text-align: center;"><img src="include/img/icons/web.png" class="img-responsive" style="width: 100px;padding: 10px"></p>
-								<p class="service-para">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non cursus sapien. Praesent euismod vel nisl a convallis. Nullam elit nibh, tincidunt ac maximus a, congue at libero. Ut placerat hendrerit sapien commodo pretium. Integer placerat laoreet libero, quis fringilla lectus semper vel.
-								</p>
-							</div>
-							<div class="col-sm-3 service-box" data-aos="fade-up">
-								<h5>SEO Company</h5>
-								<p style=" text-align: center;"><img src="include/img/icons/jigsaw.png" class="img-responsive" style="width: 100px;padding: 10px"></p>
-								<p class="service-para">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non cursus sapien. Praesent euismod vel nisl a convallis. Nullam elit nibh, tincidunt ac maximus a, congue at libero. Ut placerat hendrerit sapien commodo pretium. Integer placerat laoreet libero, quis fringilla lectus semper vel.
-								</p>
-							</div>
-							<div class="col-sm-3 service-box" data-aos="fade-up">
-								<h5>Digital Marketing Agency</h5>
-								<p style=" text-align: center;"><img src="include/img/icons/marketing.png" class="img-responsive" style="width: 100px;padding: 10px"></p>
-								<p class="service-para">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non cursus sapien. Praesent euismod vel nisl a convallis. Nullam elit nibh, tincidunt ac maximus a, congue at libero. Ut placerat hendrerit sapien commodo pretium. Integer placerat laoreet libero, quis fringilla lectus semper vel.
-								</p>
-							</div>
-							<div class="col-sm-3 service-box" data-aos="fade-up">
-								<h5>Software Development</h5>
-								<p style=" text-align: center;"><img src="include/img/icons/computer.png" class="img-responsive" style="width: 100px;padding: 10px"></p>
-								<p class="service-para">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non cursus sapien. Praesent euismod vel nisl a convallis. Nullam elit nibh, tincidunt ac maximus a, congue at libero. Ut placerat hendrerit sapien commodo pretium. Integer placerat laoreet libero, quis fringilla lectus semper vel.
-								</p>
-							</div>
-						</div>
-						<div class="row" data-aos="fade-up">
-							<div class="col-sm-3 service-box" data-aos="fade-up">
-								<h5>Graphic Designing</h5>
-								<p style=" text-align: center;"><img src="include/img/icons/picture.png" class="img-responsive" style="width: 100px;padding: 10px"></p>
-								<p class="service-para">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non cursus sapien. Praesent euismod vel nisl a convallis. Nullam elit nibh, tincidunt ac maximus a, congue at libero. Ut placerat hendrerit sapien commodo pretium. Integer placerat laoreet libero, quis fringilla lectus semper vel.
-								</p>
-							</div>
-							<div class="col-sm-3 service-box" data-aos="fade-up">
-								<h5>Web Application</h5>
-								<p style=" text-align: center;"><img src="include/img/icons/laptop.png" class="img-responsive" style="width: 100px;padding: 10px"></p>
-								<p class="service-para">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non cursus sapien. Praesent euismod vel nisl a convallis. Nullam elit nibh, tincidunt ac maximus a, congue at libero. Ut placerat hendrerit sapien commodo pretium. Integer placerat laoreet libero, quis fringilla lectus semper vel.
-								</p>
-							</div>
-							<div class="col-sm-3 service-box" data-aos="fade-up">
-								<h5>E-Commerce Website Development</h5>
-								<p style=" text-align: center;"><img src="include/img/icons/online-shopping.png" class="img-responsive" style="width: 100px;padding: 9px"></p>
-								<p class="service-para">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non cursus sapien. Praesent euismod vel nisl a convallis. Nullam elit nibh, tincidunt ac maximus a, congue at libero. Ut placerat hendrerit sapien commodo pretium. Integer placerat laoreet libero, quis fringilla lectus semper vel.
-								</p>
-							</div>
-							<div class="col-sm-3 service-box" data-aos="fade-up">
-								<h5>Web Application Development Company</h5>
-								<p style=" text-align: center;"><img src="include/img/icons/interface.png" class="img-responsive" style="width: 100px;padding: 10px"></p>
-								<p class="service-para">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non cursus sapien. Praesent euismod vel nisl a convallis. Nullam elit nibh, tincidunt ac maximus a, congue at libero. Ut placerat hendrerit sapien commodo pretium. Integer placerat laoreet libero, quis fringilla lectus semper vel.
-								</p>
-							</div>
-						</div>
+			</section><!-- Clients Section End -->
+			<!-- content end -->
+			<div class="container-fluid quote-txt" id="contact-us"><!-- Contact Information Start -->
+				<div class="container contact-us" style="clear: both;">
+					<h3>Seems You Are Interested. Let's start Work Together</h3>
+					<button class="button quote">GET QUOTE</button>
+					<div style="clear: both;">
 					</div>
-					</section><!-- Services Section End -->
-					<section id="clients"><!-- Clients Section Start -->
-					<h3 class="mid-heading" style="padding-top: 5%; padding-bottom: 5%"><span> CLIENTS </span></h3>
+				</div>
+				<footer class="foot">
 					<div class="container">
-						<section class="customer-logos slider">
-							<div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
-							<div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
-							<div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
-							<div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
-							<div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
-							<div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
-							<div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
-							<div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
-						</section>
-					</div>
-					</section><!-- Clients Section End -->
-					<!-- content end -->
-					<div class="container-fluid quote-txt"><!-- Contact Information Start -->
-					<div class="container contact-us" style="clear: both;">
-						<h3>Seems You Are Interested. Let's start Work Together</h3>
-						<button class="button quote">GET QUOTE</button>
-						<div style="clear: both;">
-						</div>
-					</div>
-					<footer class="foot">
-						<div class="container">
-							<div class="row">
-								<div class="col-sm-3" id="wrapper_1">
-									<h5>ABOUT US</h5>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin risus massa, rutrum nec placerat sit amet, auctor at enim. Nulla imperdiet, ligula eu lacinia imperdiet, ex odio vulputate quam, eget dapibus tellus nulla a ante.
-									</p>
-								</div>
-								<div class="col-sm-3">
-									<h5>KEEP IN TOUCH</h5>
-									<p>
-										<i class="fas fa-map-marker-alt" style="color: red"></i>&nbsp;&nbsp;579 E. Trout St. Jamestown, NY 14701
-										<br>
-										<i class="fas fa-phone" style="color: #B9AF09"></i>&nbsp;&nbsp;<a href="tel:5551234567">(555)123-4567</a>
-										<br>
-										<i class="fas fa-phone" style="color: #228108"></i>&nbsp;&nbsp;<a href="tel:94-1563-3732">94-1563-3732</a>
-										<br>
-										<i class="far fa-envelope" style="color: #00F1FA"></i>&nbsp;&nbsp;<a href="mailto:admin@designd.com" target="_top">admin@designd.com</a></p>
-									</div>
-									<div class="col-sm-5" id="map">
-										<script>
-										function myMap() {
-										var mapOptions = {
-										center: new google.maps.LatLng(51.5, -0.12),
-										zoom: 10,
-										mapTypeId: google.maps.MapTypeId.HYBRID
-										}
-										var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-										}
-										</script>
-										<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-									</div>
-								</div>
-								<hr>
+						<div class="row">
+							<div class="col-sm-3" id="wrapper_1">
+								<h5>ABOUT US</h5>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin risus massa, rutrum nec placerat sit amet, auctor at enim. Nulla imperdiet, ligula eu lacinia imperdiet, ex odio vulputate quam, eget dapibus tellus nulla a ante.
+								</p>
 							</div>
-							</div><!-- Contact Information End -->
-							</footer><!-- Footer End -->
-							<!-- JavaScript Libraries-->
-							<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-							<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-							<script type="text/javascript" src="include/js/client.js"></script>
-							<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-							<script type="text/javascript" src="include/js/onScroll.js"></script>
-							<script type="text/javascript" src="include/js/skills_circle.js"></script>
-							<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-							<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-							<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-							<script type="text/javascript" src="include/js/headerText.js"></script>
-							<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-							<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
-							<script type="text/javascript" src="include/js/onScroll.js"></script>
-							<script type="text/javascript" src="include/js/client.js"></script>
-							</body><!-- Body End -->
-						</html>
+							<div class="col-sm-3">
+								<h5>KEEP IN TOUCH</h5>
+								<p>
+									<i class="fas fa-map-marker-alt" style="color: red"></i>&nbsp;&nbsp;579 E. Trout St. Jamestown, NY 14701
+									<br>
+									<i class="fas fa-phone" style="color: #B9AF09"></i>&nbsp;&nbsp;<a href="tel:5551234567">(555)123-4567</a>
+									<br>
+									<i class="fas fa-phone" style="color: #228108"></i>&nbsp;&nbsp;<a href="tel:94-1563-3732">94-1563-3732</a>
+									<br>
+									<i class="far fa-envelope" style="color: #00F1FA"></i>&nbsp;&nbsp;<a href="mailto:admin@designd.com" target="_top">admin@designd.com</a></p>
+								</div>
+								<div class="col-sm-5" id="map">
+									<script>
+										function myMap() {
+											var mapOptions = {
+												center: new google.maps.LatLng(51.5, -0.12),
+												zoom: 10,
+												mapTypeId: google.maps.MapTypeId.HYBRID
+											}
+											var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+										}
+									</script>
+									<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+								</div>
+							</div>
+							<hr>
+							<div class="social-icons">
+								<a href="#"><i class="fab fa-fw fa-facebook-f"></i></a>
+								<a href="#"><i class="fas fa-fw fa-globe-asia"></i></a>
+								<a href=""><i class="fab fa-fw fa-twitter"></i></a>
+								<a href=""><i class="fab fa-fw fa-instagram"></i></a>
+							</div>
+							
+						</div>
+					</div><!-- Contact Information End -->
+				</footer><!-- Footer End -->
+				<!-- JavaScript Libraries-->
+				<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+				<script>
+					$("#myButton").click(function () {
+						$("ul").slideToggle("slow");
+					});
+				</script>
+				<script type="text/javascript" src="include/js/smoothScroll.js"></script>
+				<script type="text/javascript" src="include/js/client.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+				<script type="text/javascript" src="include/js/onScroll.js"></script>
+				<script type="text/javascript" src="include/js/skills_circle.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+				<script type="text/javascript" src="include/js/headerText.js"></script>
+				<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+				<script type="text/javascript" src="include/js/onScroll.js"></script>
+				<script type="text/javascript" src="include/js/client.js"></script>
+			</body><!-- Body End -->
+			</html>

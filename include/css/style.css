@@ -817,6 +817,14 @@ footer a:hover{
   margin: 4px 4px;
   display: inline-block; 
 }
+.foot .social-icons{
+  text-align: center;
+  font-size: 30px;
+  
+}
+.foot .icons{
+  margin-left: 20px;
+}
 /*Responsive Design*/
 @media (max-width: 768px) {
   .logo{
